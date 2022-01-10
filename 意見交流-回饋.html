@@ -1,0 +1,293 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="UTF-8">
+        <title>意見交流-回饋</title>
+    </head>
+    <style type="text/css">
+
+    .slider_container {
+                    margin: 0px auto;
+                    width: 760px;
+                    height: 100px;
+                    position: relative;
+                    border: 20px solid;
+                    border-color: #fff;
+                    background-color: #f5f5f5;
+                    box-shadow: #666 0 0 5px;
+                    }
+
+.slider_container div {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        opacity: 0;
+                        filter: alpha(opacity=0);
+                        }
+
+.slider_container div {
+                        -webkit-animation: round 25s linear infinite;
+                        animation: round 25s linear infinite;
+                        }
+
+@-webkit-keyframes round {
+                            4% {
+                            opacity: 1;
+                            filter: alpha(opacity=100);
+                            /* 0 - 1秒 淡入*/
+                            }
+                            20% {
+                            opacity: 1;
+                            filter: alpha(opacity=100);
+                            /* 1- 5秒靜止*/
+                            }
+                            24% {
+                            opacity: 0;
+                            filter: alpha(opacity=0);
+                            /* 5-6秒淡出*/
+                            }
+                        }
+@keyframes round {
+                    4% {
+                    opacity: 1;
+                    filter: alpha(opacity=100);
+                    /* 0 - 1秒 淡入*/
+                    }
+                    20% {
+                    opacity: 1;
+                    filter: alpha(opacity=100);
+                    /* 1- 5秒靜止*/
+                    }
+                    24% {
+                    opacity: 0;
+                    filter: alpha(opacity=0);
+                    /* 5-6秒淡出*/
+                    }
+                 }
+
+.slider_container div:nth-child(5) {
+                                    -webkit-animation-delay: 0s;
+                                    animation-delay: 0s;
+                                    }
+
+.slider_container div:nth-child(4) {
+                                    -webkit-animation-delay: 5s;
+                                    animation-delay: 5s;
+                                    }
+
+.slider_container div:nth-child(3) {
+                                    -webkit-animation-delay: 10s;
+                                    animation-delay: 10s;
+                                    }
+
+.slider_container div:nth-child(2) {
+                                    -webkit-animation-delay: 15s;
+                                    animation-delay: 15s;
+                                    }
+
+.slider_container div:nth-child(1) {
+                                    -webkit-animation-delay: 20s;
+                                    animation-delay: 20s;
+                                    }
+
+.slider_container span {
+                        color: #000;
+                        background: #fff;
+                        position: absolute;
+                        left: 0%;
+                        top: 25px;
+                        width: 400px;
+                        height: 50px;
+                        font-size: 30px;
+                        text-align: center;
+                        line-height: 50px;
+                        -webkit-transform:scaleY(0);
+                        -ms-transform:scaleY(0);
+                        transform:scaleY(0);
+                        -webkit-transition: all 0.5s ease-in-out;
+                        transition: all 0.5s ease-in-out;
+                        }
+
+.slider_container:hover span {
+                                width: 100%;
+                                -webkit-transform:scaleY(1);
+                                -ms-transform:scaleY(1);
+                                transform:scaleY(1);
+                                }
+
+.slider_container:hover div {
+                                -webkit-animation-play-state: paused;
+                                animation-play-state: paused;
+                                }
+
+        body { background-color : #EBE0DA; }
+        ul{margin: 0; padding: 0;}
+        ul{list-style: none;}
+
+        .menu >ul> li{
+            background-color: #312E4D;
+            float: left;
+            width: 150px;
+            height: 40px;   
+            text-align: center;
+            line-height: 40px;
+            color: white;
+            margin-right: 10px;
+        }
+
+        .menu >ul> li:hover{
+            background-color: #ACD6FF;
+        }
+
+        .sub_menu{
+            display: none;
+        }
+
+        .sub_menu >li{
+            background-color: #312E4D;
+            color:white;
+        }
+
+        .sub_menu >li:hover{
+            background-color: #ACD6FF;
+            color:#312E4D;
+        }
+        a{color:white;
+          text-decoration:none;}
+
+        .目錄{margin : 0px auto;}
+
+        .C{   width : 800px; 
+              border : 2px #D0CBC9 solid;
+              background-color : #D0CBC9;
+              margin : 0px auto; 
+              margin-top : 25px;
+              margin-bottom : 25px; }
+
+        .c{  color : #312E4D;
+             font-weight : 400;
+             font-size : 18px;
+             font-family : 標楷體; 
+             line-height : 30px;
+             margin-bottom : 5px;
+             margin-left : 5px;}
+
+        .C2{ margin-bottom : 0px;
+             margin-left : 40px;}
+
+
+        .e { margin : 0px auto; }
+        .E1 { margin : 0px auto; 
+              margin-top : 25px;
+              margin-bottom : 0px; }
+
+        .main{margin : 0px auto;
+              background-color:#312E4D;
+              height:40px;
+              width:800px;}
+
+    </style>
+    <body>  
+
+    <div class="slider_container">
+    <div>
+        <img src="圖片6.png" alt="pure css3 slider" width="760" height="100" />
+        <span class="info">展翠古箏社</span>
+    </div>
+    <div>
+        <img src="註解 2019-10-22 002823.png" alt="pure css3 slider" width="760" height="100" />
+        <span class="info">展翠古箏社</span>
+    </div>
+    <div>
+        <img src="喵喵.jpg" alt="pure css3 slider" width="760" height="100" />
+        <span class="info">展翠古箏社</span>
+    </div>
+    <div>
+        <img src="圖片2.jpg" alt="pure css3 slider" width="760" height="100" />
+        <span class="info">展翠古箏社</span>
+    </div>
+    <div>
+        <img src="喵.jpg" alt="pure css3 slider" width="760" height="100" />
+        <span class="info">展翠古箏社</span>
+    </div>
+    </div>
+
+    <div name="目錄" class="目錄1">    
+        <div class="main">
+            <div class="menu">
+                <ul>
+                    <li><a href="社員登入.html">社員登入</a></li>
+                    <li>古箏社社團介紹
+                        <div style="z-index:999;position:relative;">
+                           <ul class="sub_menu">
+                              <li><a href="古箏社社團介紹-社團介紹.html">社團介紹</a></li>
+                              <li><a href="古箏社社團介紹-活動介紹.html">活動介紹</a></li>
+                           </ul>
+                       </div>
+                    </li>
+                    <li><a href="古箏社活動展示.html">古箏社活動展示</a></li>
+                    <li>社團消息公告
+                      <div style="z-index:999;position:relative;">
+                           <ul class="sub_menu">
+                              <li><a href="社團消息公告-活動消息.html">活動消息</a></li>
+                              <li><a href="社團消息公告-社團招生.html">社團招生</a></li>
+                           </ul>
+                       </div>
+                    </li>
+                    <li>意見交流
+                      <div style="z-index:999;position:relative;">
+                          <ul class="sub_menu">
+                              <li><a href="意見交流-回饋.html">回饋</a></li>
+                              <li><a href="意見交流-聊天.html">聊天</a></li>
+                          </ul>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+          $(function(){
+
+             $(".menu >ul >li").hover(function(){
+
+                $(this).find(".sub_menu").show();
+
+             },function(){
+
+                $(this).find(".sub_menu").hide();
+             });
+
+           });
+
+        </script>
+
+    <div name="C" class="C">
+  <tr>
+  <td>
+    <form name="C">
+        <ul class="C2">
+            <span class="c">
+                <li>姓名(選填)：<input name="招生1" placeholder="姓名" ></li>
+                <li>學系(選填)：<input name="招生1" placeholder="系級" ></li>
+                <li>活動建議：<br>
+                <textarea name="招生" rows="5" cols="95" placeholder="什麼都可以說~"></textarea></li>
+            </span>  
+        </ul>
+        <br>
+    </form>
+</div>
+
+<table class="E1">
+  <tr>
+  <td>
+    <span class="e">
+        <input type="reset" value="清除重填">
+        <input type="submit" value="確認送出"><br>
+    </span>
+</table>
+
+    </body>
+</html>
